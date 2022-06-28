@@ -1,6 +1,221 @@
+
+* {
+    box-sizing: border-box;
+}
 body{
+    display: flex;
+    flex-direction: column;
     width: 1440px;
     background-image: url(/imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14 px;
+    justify-content: space-evenly;
+    background-position: 120%-0%;
+    
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: 500;
 }
 
+.BarraNavegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    font-weight: 500;
+
+}
+
+.BarraNavegacion ul {
+    display: flex;
+
+}
+.BarraNavegacion ul li {
+    margin: 10px;
+
+}
+
+.getStarted {
+    background-color: rgb(242, 95, 58);
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 134px;
+    line-height: 19px;
+    color: white;
+}
+
+.seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 100px;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 40px;
+
+}
+
+/* Bring Everyone together */
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: nullpx;
+    line-height: 40px;
+    padding: 10%;
+
+}
+
+.graficos{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 0px;
+
+}
+
+.segunda{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: nullpx;
+    line-height: 40px;
+    padding: 10%;
+
+}
+
+.puntos{
+    display: flex;
+    flex-direction: row;
+
+}
+/* What they've said */
+
+.opiniones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.01em;
+    color: #242E53;
+    font-weight: 700;
+}
+
+/* Bloque de opiniones/reviews */
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+/* Cada cajita de opinion */
+
+.Opinion{
+    background-color: #FAFAFA;
+}
+
+.pic{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: -15%;
+}
+
+/* BOTON GET STARTED ANTES DE LO NARANJA */
+
+#boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+
+/* RECTANGULO NARANJA */
+
+.franja_naranja{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(242, 95, 58);
+    width: 1440px;
+    padding: 0px 50px;
+}
+
+.franja_naranja h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(249, 249, 249);
+    width: 438px;
+    height: 96px;
+}
+
+.getStartedBlanco {
+    background-color: rgb(249, 249, 249);
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 134px;
+    line-height: 19px;
+    color: rgb(242, 95, 58);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(29,30,37);
+    display: flex;
+    align-items: center;
+    height: 247px;
+    justify-content: space-around;
+}
+
+.imgFooter {
+
+    color: rgb(249, 249, 249);
+}
+
+footer ul {
+    margin: 12px;
+    color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    line-height: 30px;
+}
+form{
+    display: flex;
+}
+
+.email{
+    color: rgb(249, 249, 249);
+}
+
+.copyright{
+    color: rgb(249, 249, 249);
+}
+
+input{
+    width: 201px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+button {
+    width: 63px;
+    height: 42px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgb(242, 95, 58);
+    color: rgb(249, 249, 249);
+}

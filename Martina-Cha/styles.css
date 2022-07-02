@@ -1,42 +1,63 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16 px;
+    padding: 0;
+    margin: 0;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    width: 1440px;
+  
+    position: relative;
+    width: 100%;
     background-image: url(/imagenes/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 14 px;
-    justify-content: space-evenly;
-    background-position: 120%-0%;
+    
     
 }
-.header {
+
+/* Barra navegacion Mobile */
+
+a:hover {
+    color: rgb(242, 95, 58);
+  }
+
+  a.getStarted:hover {
+    color: rgb(35, 44, 81);
+  }
+
+header{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2.6rem 0;
     flex-wrap: wrap;
-    font-weight: 500;
 }
-
-.BarraNavegacion{
+header nav {
+    width: 80%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-    font-weight: 500;
-
+    
 }
 
-.BarraNavegacion ul {
-    display: flex;
-
+header nav button.hamburguesa {
+    background-color: white;
+    color: black;
+    width: 63px;
+    height: 42px;
+    font-size: 25px;
+    padding: 10px;
+    border-style: none;
 }
-.BarraNavegacion ul li {
-    margin: 10px;
 
+header nav.BarraNavegacion ul{
+    display: none;
+}
+
+
+header nav a.getStarted{
+    display:none;
 }
 
 .getStarted {
@@ -49,86 +70,170 @@ body{
     color: white;
 }
 
-.seccion {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 100px;
+.getStarted:hover{
+    background-color: var(rgb(243, 160, 139));
 }
 
-h1 {
+/* Bring Everyone together */
+
+main .seccion{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+main section.seccion div.graficos{
+    width: 100%;
+    text-align: center;
+}
+main section.seccion div.graficos img{
+    max-width: 375px;
+}
+
+main .seccion .principal{
+    width: 100%;
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: center;
+}
+
+main .seccion .principal p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+
+main .seccion .principal h1 {
     font-weight: 700;
     line-height: 40px;
     font-size: 40px;
 
 }
 
-/* Bring Everyone together */
+/* What's different about Manage? */
 
-.principal{
+main section.seccion div.segunda{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    width: 100%;
+    text-align: center;
+    align-items: center;
     border-radius: nullpx;
-    line-height: 40px;
     padding: 10%;
-
 }
 
-.graficos{
+main section.seccion div.segunda h2{
+    font-size: 1.8rem;
+    color: rgb(35, 44, 81);
+   
+}
+
+main section.seccion div.segunda p{
+    margin: 1rem 0;
+}
+
+/* Lista numerada de Funciones de Manage */
+
+main section.seccion div.ListaOrdenada{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    border-radius: 0px;
-
+    margin-bottom: 1.2rem;
 }
 
-.segunda{
+main section.seccion div.ListaOrdenada div{
+    padding-left: 1rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    border-radius: nullpx;
-    line-height: 40px;
-    padding: 10%;
-
+    margin: 1.2rem 0;
+   
 }
 
-.puntos{
+main section.seccion div.ListaOrdenada div div{
+    margin: 0.8rem 0;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-
+    align-items: center;
+    font-size: 0.9rem;
+    background-color: rgb(255, 239, 234);
 }
+
+/* Numeros de la Lista numerada */
+
+main section.seccion div.ListaOrdenada div button {
+    width: 63px;
+    height: 42px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgb(242, 95, 58);
+    color: rgb(249, 249, 249);
+    border: none;
+}
+
+
 /* What they've said */
 
-.opiniones{
+main section.reviews{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    align-items: center;
+    border-radius: nullpx;
+}
+
+main section.reviews h2{
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: -0.01em;
     color: #242E53;
     font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 2rem;
 }
 
 /* Bloque de opiniones/reviews */
 
-.reviews{
+
+
+main section.reviews div.Opinion{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 100%;
+    height: 60%;
+    margin-top: 2%;
+    position: relative;
+    background-color: #FAFAFA;
+    text-align: center;       
 }
 
 /* Cada cajita de opinion */
 
-.Opinion{
-    background-color: #FAFAFA;
+main section.reviews div.redondeles i{
+    font-size: 50px;
+    color: rgb(242, 95, 58);
 }
 
-.pic{
-    position: relative;
-    width: 70px;
-    height: 70px;
-    top: -15%;
+
+/* Cajas de opiniones que no aparecen en mobile */
+
+main section.reviews div.Opinion article.Anisha{
+    display: none;
+            
+}
+
+main section.reviews div.Opinion article.Richard{
+    display: none;
+            
 }
 
 /* BOTON GET STARTED ANTES DE LO NARANJA */
@@ -142,21 +247,21 @@ h1 {
 
 /* RECTANGULO NARANJA */
 
-.franja_naranja{
+main section.franja_naranja{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     background-color: rgb(242, 95, 58);
-    width: 1440px;
-    padding: 0px 50px;
+    width: 100%;
+    padding: 2.8rem 0;
 }
 
-.franja_naranja h2{
+main section.franja_naranja h2{
     font-size: 40px;
     font-weight: 700;
     color: rgb(249, 249, 249);
-    width: 438px;
-    height: 96px;
+    text-align: center;
 }
 
 .getStartedBlanco {
@@ -173,10 +278,16 @@ h1 {
 
 footer{
     background-color: rgb(29,30,37);
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 247px;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .imgFooter {
@@ -192,18 +303,18 @@ footer ul {
     align-items: left;
     line-height: 30px;
 }
-form{
+
+footer div.go{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.8rem 0;
 }
 
 .email{
     color: rgb(249, 249, 249);
 }
-
-.copyright{
-    color: rgb(249, 249, 249);
-}
-
 input{
     width: 201px;
     height: 44px;
@@ -211,11 +322,262 @@ input{
     padding: 10px;
 }
 
-button {
+button.go{
+    background-color: rgb(242, 95, 58);
+    position: relative;
+    font-size: 1.0rem;
+    padding: 0.7rem 1.0rem;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+}
+
+footer div.ListaLinks{
+    display: flex;
+   
+}
+
+footer div.logos div.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    width: 100%;
+}
+
+footer div.logos div.redes img{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.0rem;
+}
+
+footer div.logos div.logoblanco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    width: 100%;
+}
+
+.copyright{
+    color: rgb(249, 249, 249);
+}
+
+
+
+button.getStarted {
     width: 63px;
     height: 42px;
     border-radius: 50px;
     padding: 10px;
     background-color: rgb(242, 95, 58);
     color: rgb(249, 249, 249);
+}
+
+@media(min-width: 1440px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-image: url(/imagenes/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-weight: 500;
+        width: 100%;
+        padding: 2.6rem 0;
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+
+    header nav.BarraNavegacion ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        font-weight: 500;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            
+    }
+    .BarraNavegacion ul li {
+        margin: 10px;
+    
+    }
+    header nav button.hamburguesa {
+        display: none;
+    }
+
+    header nav a.getStarted{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(242, 95, 58); 
+        border-radius: 50px;
+        padding: 10px;
+        width: 134px;
+        line-height: 19px;
+        color: white;
+    }
+
+    main section.seccion{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    main section.seccion div:nth-child(1){
+        order: 2;
+    }
+    main section.seccion div:nth-child(2){
+        order: 1;
+    }
+    main section.seccion div:nth-child(3){
+        order: 3;
+    }
+    main section.seccion div:nth-child(4){
+        order: 4;
+    }
+
+    main section.seccion div.principal{
+        text-align: start;
+        align-items: start;
+        justify-content: start;
+        max-width: 30rem;
+        margin-right: 5rem;
+        
+    }
+
+    main section.seccion div.graficos{
+        align-items: flex-end;
+        max-width: 45rem;
+    }
+
+    main section.seccion div.graficos img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    main section.seccion div.ListaOrdenada div{
+        display: flex;
+        flex-direction: column;
+        order: -1;
+    }
+
+    main section.seccion div.segunda{
+        text-align: start;
+        align-items: start;
+        justify-content: start;
+        max-width: 40%;
+        margin-right: 5rem;
+        padding: 0%;
+    }
+
+    main section.seccion div.ListaOrdenada{
+        align-items: start;
+        max-width: 45rem;
+    }
+
+    main section.seccion div.segunda h2{
+        width: 40%;
+        height: auto;
+    }
+
+    main section.seccion div.segunda p{
+        width: 50%;
+        height: auto;
+    }
+
+    main section.reviews div.Opinion article.Anisha{
+        display: block;
+                
+    }
+    
+    main section.reviews div.Opinion article.Richard{
+        display: block;
+                
+    }
+    
+    main section.reviews div.redondeles i{
+        display: none;
+    }
+
+    main section.reviews div#boton{
+        padding-top: 10%;
+    }
+
+    main section.franja_naranja{
+        display: flex;
+        flex-direction: row;
+        width: 100%;        
+    }
+
+    main section.franja_naranja h2{
+        text-align: start;
+        align-items: start;
+        justify-content: start;
+        width: 30%;  
+        margin-right: 40%;     
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    
+
+    footer div.logos{
+        text-align: start;
+        align-items: left;
+        justify-content: start;
+        width: 20%; 
+        order: -1; 
+        margin-right: 10%;
+       
+    }
+
+    footer div.go{
+        padding: 0%;
+        order: -1;
+        align-items: right;
+        margin-left: 80%;
+       
+    }
+
+    footer div.ListaLinks{
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    a:hover {
+        color: rgb(242, 95, 58);
+      }
+      
+    a.getStarted:hover {
+        color: rgb(35, 44, 81);
+      }
+
+
+
+
+
 }
